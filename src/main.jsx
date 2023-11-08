@@ -2,14 +2,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
-import {createBrowserRouter, RouterProvider, Navigate} from 'react-router-dom'
+import {createHashRouter, RouterProvider, Navigate} from 'react-router-dom'
 import Child1 from './components/Child1.jsx'
 import Child2 from './components/Child2.jsx'
 import Child3 from './components/Child3.jsx'
 import Home from './components/Home.jsx'
 import Error404 from './components/Error404.jsx'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     // Wenn (nach "/") ein ungültiger Pfad angegeben wird, dann wird das errorElement angezeigt (statt App)
